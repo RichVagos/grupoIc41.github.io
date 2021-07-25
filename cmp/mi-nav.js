@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {
   cargaRoles
 } from "../js/seguridad.js";
