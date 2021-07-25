@@ -42,18 +42,15 @@ class MiNav extends HTMLElement {
               "chat.html">Chat</a>
           </li>`;
       }
-      if (roles.has(
-        "Administrador")) {
+      if (roles.has("Partcipante")) {
         html += /* html */
           `<li>
             <a href=
 "alumnos.html">Alumnos</a>
           </li>`;
       }
-      this.ul.innerHTML += html;
-    }
     if (roles.has(
-      "Participante")) {
+      "Administrador")) {
       html += /* html */
         `<li>
           <a href=
@@ -64,6 +61,7 @@ class MiNav extends HTMLElement {
   }
   }
 }
+
 
 customElements.define(
   "mi-nav", MiNav);
