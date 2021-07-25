@@ -106,7 +106,6 @@ async function htmlFila(doc) {
           </strong>
           <span
               class="secundario">
-            ${pasatiempo}<br>
             ${roles}
           </span>
         </span>
