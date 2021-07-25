@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {
   getAuth,
   getFirestore
@@ -19,8 +20,8 @@ const lista = document.
 const firestore = getFirestore();
 const daoRol = firestore.
   collection("Rol");
-const daoPasatiempo = firestore.
-  collection("Alumno");
+//const daoPasatiempo = firestore.
+//  collection("Pasatiempo");
 const daoUsuario = firestore.
   collection("Usuario");
 
@@ -81,9 +82,9 @@ async function htmlFila(doc) {
   const data = doc.data();
   const img = cod(
     await urlStorage(doc.id));
-  const alumno =
-    await buscaAlumno(
-      data.alumnoId);
+  const pasatiempo =
+  //  await buscaPasatiempo(
+  //    data.pasatiempoId);
   const roles =
     await buscaRoles(data.rolIds);
   const parámetros =
@@ -105,7 +106,7 @@ async function htmlFila(doc) {
           </strong>
           <span
               class="secundario">
-            ${alumno}<br>
+            ${pasatiempo}<br>
             ${roles}
           </span>
         </span>
@@ -114,27 +115,27 @@ async function htmlFila(doc) {
 }
 
 /** Recupera el html de un
- * Alumno en base a su id.
+ * pasatiempo en base a su id.
  * @param {string} id */
-async function
-  buscaAlumno(id) {
+/*async function
+  buscaPasatiempo(id) {
   if (id) {
     const doc =
-      await daoAlumno.
+      await daoPasatiempo.
         doc(id).
         get();
     if (doc.exists) {
       /**
        * @type {import(
           "./tipos.js").
-            Alumno} */
-      const data = doc.data();
+            Pasatiempo} */
+ /*     const data = doc.data();
       return (/* html */
-        `${cod(data.nombre)}`);
+   /*     `${cod(data.nombre)}`);
     }
   }
-  return "-- Sin Usuario --";
-}
+  return "-- Sin Pasatiempo --";
+}*/
 
 /** Recupera el html de los
  * roles en base a sus id
