@@ -82,7 +82,7 @@ async function htmlFila(doc) {
   const data = doc.data();
   const img = cod(
     await urlStorage(doc.id));
-  const pasatiempo =
+ // const pasatiempo =
   //  await buscaPasatiempo(
   //    data.pasatiempoId);
   const roles =
