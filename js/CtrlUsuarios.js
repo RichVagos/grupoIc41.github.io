@@ -99,16 +99,6 @@ async function htmlFila(doc) {
           <img src="${img}"
             alt="Falta el Avatar">
         </span>
-        <span class="texto">
-          <strong
-              class="primario">
-            ${cod(doc.id)}
-          </strong>
-          <span
-              class="secundario">
-            ${roles}
-          </span>
-        </span>
       </a>
     </li>`);
 }
