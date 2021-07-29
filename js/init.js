@@ -7,12 +7,11 @@
  * quedar igual que en tu
  * servidor. */
 // @ts-ignore
-firebase.initializeApp({
-    apiKey: "AIzaSyCfMMR4bFjJgfECWOsx6iRCHPZTeDQ9GBQ",
-    authDomain: "bdfalumnos41.firebaseapp.com",
-    projectId: "bdfalumnos41",
-    storageBucket: "bdfalumnos41.appspot.com",
-    messagingSenderId: "463512573259",
-    appId: "1:463512573259:web:2531082c01b911490b04ce",
-    measurementId: "G-DXY3ZYMKY4"
+ apiKey: "AIzaSyBGwT5Vaf2GCBRvHMrPu5Bq8AI_REM2pgM",
+    authDomain: "autenrichv.firebaseapp.com",
+    projectId: "autenrichv",
+    storageBucket: "autenrichv.appspot.com",
+    messagingSenderId: "357072619068",
+    appId: "1:357072619068:web:18ab87e1e64228cf8e6539",
+    measurementId: "G-82PLSHPFTS"
 });
